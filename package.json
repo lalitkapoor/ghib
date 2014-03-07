@@ -1,0 +1,36 @@
+{
+  "name": "ghib",
+  "version": "0.0.1",
+  "description": "create meaningful branch names based on github issues",
+  "main": "./lib/index.js",
+  "bin": {
+    "ghib": "./bin/index.js"
+  },
+  "dependencies": {
+    "ghauth": "~0.0.2",
+    "github": "~0.1.14",
+    "bluebird": "~1.0.8",
+    "gift": "~0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lalitkapoor/ghib.git"
+  },
+  "keywords": [
+    "git",
+    "branch",
+    "github",
+    "issues"
+  ],
+  "author": "Lalit Kapoor <lalitkapoor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lalitkapoor/ghib/issues"
+  },
+  "preferGlobal": true,
+  "homepage": "https://github.com/lalitkapoor/ghib"
+}
