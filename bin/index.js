@@ -8,12 +8,14 @@ var Ghib = require('../lib/ghib');
 
 var ghauth = Promise.promisify(require('ghauth'));
 
-var usage = 'Usage:'.yellow + ' ghib ' + '<github issue number>'.blue;
+var usage = '\nUsage:'.yellow + ' ghib ' + '<github issue number>'.blue;
 
 if (process.argv.length < 3)
   return console.log(usage);
 
-if (isNaN(parseInt(process.argv[2])) || process.argv[2] === '0') {
+var issueNumber = parseInt(process.argv[2]);
+
+if (isNaN(issueNumber) || issueNumber == 0) {
   console.error('\n<github issue number> must be a positive integer\n'.red);
   console.error(usage);
   return;
@@ -59,7 +61,7 @@ git.configAsync()
   , directory: '.'
   });
 
-  return ghib.createBranch(Math.abs(parseInt(process.argv[2])));
+  return ghib.createBranch(Math.abs(issueNumber));
 })
 .catch(function(error){
   console.error(error);
