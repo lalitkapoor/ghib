@@ -24,6 +24,9 @@ var user = null;
 if (process.argv.length < 3)
   return console.error('Usage: ghib <github issue number>');
 
+if (isNaN(parseInt(process.argv[2]))
+  return console.error('github issue number must be a valid number');
+
 git.configAsync()
 .then(function(config){
   var remote = config.items['remote.origin.url'];
@@ -49,7 +52,7 @@ git.configAsync()
   , directory: '.'
   });
 
-  return ghib.createBranch(process.argv[2]);
+  return ghib.createBranch(Math.abs(parseInt(process.argv[2])));
 })
 .catch(function(error){
   console.error(error);
