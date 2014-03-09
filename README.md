@@ -13,7 +13,7 @@ For example I opened an issue titled: _auto detect owner and repository_. It got
 assigned an issue number: _6_. Now whenever I decide to start working on that
 issue I'd like to be able to create a branch name for it quickly. Preferably
 something that will quickly let me know what issue I'm working on and something
-that will be meaninful.
+that will be meaningful.
 
 Issue Number: `#6` Issue Title: `auto detect owner and repository`
 
