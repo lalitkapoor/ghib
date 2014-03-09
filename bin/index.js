@@ -21,6 +21,9 @@ var git = Promise.promisifyAll(gift('.'));
 var repo = null;
 var user = null;
 
+if (process.argv.length < 3)
+  return console.error('Usage: ghib <github issue number>');
+
 git.configAsync()
 .then(function(config){
   var remote = config.items['remote.origin.url'];
