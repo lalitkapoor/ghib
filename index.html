@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ghib by lalitkapoor</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ghib</h1>
+        <p>create meaningful git branch names (using github issues)</p>
+
+        <p class="view"><a href="https://github.com/lalitkapoor/ghib">View the Project on GitHub <small>lalitkapoor/ghib</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lalitkapoor/ghib/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lalitkapoor/ghib/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lalitkapoor/ghib">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="ghib-" class="anchor" href="#ghib-"><span class="octicon octicon-link"></span></a>ghib <a href="http://badge.fury.io/js/ghib"><img src="https://badge.fury.io/js/ghib.png" alt="NPM version"></a>
+</h1>
+
+<p><strong>create meaningful git branch names (based on github issues) easily</strong></p>
+
+<p><a href="https://nodei.co/npm/ghib/"><img src="https://nodei.co/npm/ghib.png" alt="NPM"></a></p>
+
+<p>I try and create meaningful issue titles on GitHub and I found it annoying to
+retype the same thing execpt with dashes when I create branches to work on those
+issues.</p>
+
+<p>For example I opened an issue titled: <em>auto detect owner and repository</em>. It got
+assigned an issue number: <em>6</em>. Now whenever I decide to start working on that
+issue I'd like to be able to create a branch name for it quickly. Preferably
+something that will quickly let me know what issue I'm working on and something
+that will be meaninful.</p>
+
+<p>Issue Number: <code>#6</code> Issue Title: <code>auto detect owner and repository</code></p>
+
+<p>The following branch is created: <code>6-auto-detect-owner-and-repository</code> by
+executing <code>ghib 6</code> in my project directory</p>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<pre><code>npm install -g ghib
+</code></pre>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>While you are in your project directory do the following and a branch will be
+created for you (checkout master or whatever branch you need to first if
+necessary, so the branch is created with the right parent).</p>
+
+<pre><code>ghib &lt;githubIssueNumber&gt;
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lalitkapoor">lalitkapoor</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
