@@ -18,7 +18,7 @@ that will be meaninful.
 Issue Number: `#6` Issue Title: `auto detect owner and repository`
 
 The following branch is created: `6-auto-detect-owner-and-repository` by
-executing `ghib 6` in my repository
+executing `ghib 6` in my project directory
 
 ### Installation
 
