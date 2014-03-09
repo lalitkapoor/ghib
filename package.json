@@ -2,7 +2,7 @@
   "name": "ghib",
   "version": "0.0.1",
   "description": "create meaningful branch names based on github issues",
-  "main": "./lib/index.js",
+  "main": "./lib/ghib.js",
   "bin": {
     "ghib": "./bin/index.js"
   },
