@@ -1,10 +1,23 @@
 #!/usr/bin/env node
 
 var url = require('url');
-var Promise = require('bluebird');
 var gift = require('gift');
-var ghauth = Promise.promisify(require('ghauth'));
+var colors = require('colors');
+var Promise = require('bluebird');
 var Ghib = require('../lib/ghib');
+
+var ghauth = Promise.promisify(require('ghauth'));
+
+var usage = 'Usage:'.yellow + ' ghib ' + '<github issue number>'.blue;
+
+if (process.argv.length < 3)
+  return console.log(usage);
+
+if (isNaN(parseInt(process.argv[2])) || process.argv[2] === '0') {
+  console.error('\n<github issue number> must be a positive integer\n'.red);
+  console.error(usage);
+  return;
+}
 
 // ~/.config/lalitkapoor-ghib.json will store the token
 var authOptions = {
@@ -20,12 +33,6 @@ var git = Promise.promisifyAll(gift('.'));
 
 var repo = null;
 var user = null;
-
-if (process.argv.length < 3)
-  return console.error('Usage: ghib <github issue number>');
-
-if (isNaN(parseInt(process.argv[2]))
-  return console.error('github issue number must be a valid number');
 
 git.configAsync()
 .then(function(config){
