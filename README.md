@@ -15,10 +15,10 @@ issue I'd like to be able to create a branch name for it quickly. Preferably
 something that will quickly let me know what issue I'm working on and something
 that will be meaningful.
 
-Issue Number: `#6` Issue Title: `auto detect owner and repository`
+Issue Number: `#6` <br\> Issue Title: `auto detect owner and repository`
 
 The following branch is created: `6-auto-detect-owner-and-repository` by
-executing `ghib 6` in my project directory
+executing `ghib 6` in my project directory.
 
 ### Installation
 
